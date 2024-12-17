@@ -18,7 +18,7 @@ void loop() {
   float tempC = dht.readTemperature();
   float tempF = tempC * 9 / 5 + 32;  
 
-  lcd.setCursor(0, 0); // First row
+  lcd.setCursor(0, 0);
   if (isnan(humidity) || isnan(tempF)) {
     lcd.print("Sensor Error!");
   } else {
